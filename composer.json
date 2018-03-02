@@ -1,5 +1,5 @@
 {
-    "name": "stavarengo/php-sigep",
+    "name": "amosassis/php-sigep",
     "version": "0.0.1",
     "type": "library",
     "description": "Integração com Web Service do Correios. Gera etiquetas, consulta preços e prazos, imprime etiquetas e PLP, etc.",
@@ -18,7 +18,7 @@
     "require": {
         "php": ">=5.4",
         "ext-soap": "*",
-        "stavarengo/php-sigep-fpdf": "dev-master"
+        "setasign/fpdf": "1.8.1"
     },
     "autoload": {
         "psr-0": {
@@ -30,6 +30,10 @@
         {
             "name": "Rafael Stavarengo",
             "email": "faelsta@gmail.com"
+        },
+        {
+            "name": "Amos de Assis",
+            "email": "amos@am10.com.br"
         }
     ]
 }

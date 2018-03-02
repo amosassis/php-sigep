@@ -13,12 +13,7 @@ $autoload = __DIR__ . '/../vendor/autoload.php';
 if (file_exists($autoload)) {
     require_once $autoload;
 }
-if (!class_exists('PhpSigepFPDF')) {
-    throw new RuntimeException(
-        'Não encontrei a classe PhpSigepFPDF. Execute "php composer.phar install" ou baixe o projeto ' .
-        'https://github.com/stavarengo/php-sigep-fpdf manualmente e adicione a classe no seu path.'
-    );
-}
+
 
 // Configura o php-sigep
 

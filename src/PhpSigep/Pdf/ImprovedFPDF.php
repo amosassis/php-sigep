@@ -4,7 +4,7 @@ namespace PhpSigep\Pdf;
  * @author: Stavarengo
  * @modify Anderson Luiz Silvério <andersonlsilverio@gmail.com>
  */
-class ImprovedFPDF extends \PhpSigepFPDF
+class ImprovedFPDF extends \FPDF
 {
     /**
      * @var int
@@ -35,6 +35,16 @@ class ImprovedFPDF extends \PhpSigepFPDF
     	    //stream_wrapper_unregister("var");
         }
 
+    }
+
+    public function _out($s){       
+        ini_set('display_errors',0); 
+        return parent::_out($s);
+    }
+
+    public function __get($name)
+    {
+        return $this->$name;
     }
 
     public function _($str)
