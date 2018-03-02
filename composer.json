@@ -5,7 +5,7 @@
     "description": "Integração com Web Service do Correios. Gera etiquetas, consulta preços e prazos, imprime etiquetas e PLP, etc.",
     "keywords": ["correios", "sigep"],
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": false,
     "config": {
         "sort-packages": true
     },
