@@ -37,8 +37,7 @@ class ImprovedFPDF extends \FPDF
 
     }
 
-    public function _out($s){       
-        ini_set('display_errors',0); 
+    public function _out($s){  
         return parent::_out($s);
     }
 
